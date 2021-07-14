@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+    <h2>Enter a New Book</h2>
+<form action="/books" method="POST">
+	<label>Title:
+	  <input type="text" name="title">
+	</label><br>
+    <label>Author:
+        <input type="text" name="author">
+      </label>
+      <br>
+	<label>Published:
+	  <input type="text" name="publish">
+	</label><br>
+	<label>Description:
+        <textarea type="text" name="description"> </textarea>
+      </label><br>
+	<label>Link to the book cover:
+	  <input type="url" name="link">
+	</label><br>
+	<input type="submit" value="Add Book">
+</form>
+</body>
+</html>
