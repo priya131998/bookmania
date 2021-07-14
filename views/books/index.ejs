@@ -9,7 +9,8 @@
 </head>
 <body>
   <h1>Book List</h1>
-  <table>
+  <div class = "main-container">
+  <!-- <table>
       <thead>
           <tr>
               <th>Book cover</th>
@@ -18,7 +19,7 @@
       <tbody>
           <% books.forEach(function(b) { %>
             
-              
+              <div class = "container"></div>
                 <form
                     action="/books/<%= b._id %>?_method=DELETE"
                     id="delete-form"
@@ -34,10 +35,27 @@
                     
                     
                 </form>
-            
+            </div>
         
           <% }); %>
       </tbody>
-  </table>
+  </table> -->
+ <section class = "second-container">
+    <% books.forEach(function(b) { %>
+        <form
+                    action="/books/<%= b._id %>?_method=DELETE"
+                    id="delete-form"
+                    method="POST"
+                >
+                <button type="submit">X</button>
+                <div class = "container">
+                    <!-- <button type="submit">X</button> -->
+                    <a href="/books/<%= b._id %>"><img class="grid" src = <%= b.link %> /></a>
+                    <!-- <a href="/books/<%= b._id %>">DETAILS</a> -->
+                </div>
+                </form>
+            <% }); %>
+            </section>
+        </div>
 </body>
 </html>

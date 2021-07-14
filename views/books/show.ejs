@@ -22,9 +22,9 @@
         <div><img src = <%= book.link %> /></div>
       </section>
       <a href="/books/<%= book._id %>/edit">Update</a>
-      <a href="/reviews/<%= book._id %>">Add Review</a>
+      <!-- <a href="/reviews/<%= book._id %>">Add Review</a> -->
 
-      <!-- <br><br><h2>Reviews</h2>
+      <br><br><h2>Reviews</h2>
 <form id="add-review-form" method="POST"
   action="/books/<%= book._id %>/reviews">
   <label>Review:</label>
@@ -51,7 +51,13 @@
     </thead>
     <tbody>
       <% book.reviews.forEach(function(r) { %>
+        <form
+                    action="/books/<%= book._id %>/reviews/<%= r._id %>?_method=DELETE"
+                    id="delete-form"
+                    method="POST"
+                >
         <tr>
+          <td><button type="submit">X</button></td>
           <td><%= r.createdAt.toLocaleDateString() %></td>
           <td><%= r.content %></td>
           <td><%= r.rating %></td>
@@ -61,6 +67,6 @@
   </table>
 <% } else { %>
   <h5>No Reviews Yet</h5>
-<% } %> -->
+<% } %>
 </body>
 </html>
