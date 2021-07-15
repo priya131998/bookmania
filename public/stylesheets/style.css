@@ -1,34 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
 .main-container {
   height: 110vh;
   display: flex;
   /* background: #67b206; */
-  background: red;
   padding: 2%;
   /* width:100%; */
   justify-content: space-evenly; 
   
 }
 a {
-  color: #00B7FF;
+  color: #ffffff;
 }
 
 .container {
   /* width: calc(70%); */
   /* height: calc(18.9%); */
-  margin: 12px; 
+  margin: 15px; 
   position: relative;
   padding-right: 2%;
-  
+  border-color: teal;
   /* box-shadow: 5px 5px 5px rgba(0,0,0,.3); */
 }
 
+.delete{
+  margin-bottom: 2%;
+}
+
 .grid {
-  width: 150px;
-  height: 150px;
-  padding: 20px;
+  width: 140px;
+  height: 180px;
+  padding: 15px;
   border-radius: 5px;
-  background: #1C7CCC;
+  background: #800020;
   align-items: center;
+}
+
+.grid:hover {
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.829);
 }
 
 .second-container {
@@ -53,10 +62,10 @@ a {
 .book {
   width: 400px;
   height: 550px;
-  background-color: red;
+  background-color: #F9D8A7;
   border-top: 3px solid #333;
   border-right: 3px solid #333;
-  box-shadow: inset 280px 0 50px #0005, 0 20px 100px blue;
+  box-shadow: inset 280px 0 50px #d1b388, 0 20px 100px blue;
   transform-style: preserve-3d;
   transform: perspective(1500px);
 }
@@ -130,4 +139,83 @@ transform: rotateY(-160deg);
         margin: 0 auto;
 }
 
+.title-background{
+  padding: 40px;
+  background-color: #121212;  
+}
 
+.title-page {
+  border-right: solid 3px rgba(0,255,0,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 40px;
+  color: rgba(255,255,255,.70);
+  margin-top: 150px;
+  margin-bottom: 80px;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+}
+
+/* Animation */
+.title-page{
+  animation: animated-text 2s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 590px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(0,255,0,.75);}
+  to{border-right-color: transparent;}
+}
+
+
+a.title-button {
+  display: block;
+  border-radius: 4px;
+  background-color: #800020;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin:  0 auto;
+  font-family: 'Source Code Pro', monospace;  
+}
+
+a.title-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+a.title-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+a.title-button:hover span {
+  padding-right: 25px;
+}
+
+a.title-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
