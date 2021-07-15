@@ -1,8 +1,11 @@
 .main-container {
-  height: 100vh;
+  height: 110vh;
   display: flex;
-  background: #67b206;
+  /* background: #67b206; */
+  background: red;
   padding: 2%;
+  /* width:100%; */
+  justify-content: space-evenly; 
   
 }
 a {
@@ -14,6 +17,8 @@ a {
   /* height: calc(18.9%); */
   margin: 12px; 
   position: relative;
+  padding-right: 2%;
+  
   /* box-shadow: 5px 5px 5px rgba(0,0,0,.3); */
 }
 
@@ -23,12 +28,106 @@ a {
   padding: 20px;
   border-radius: 5px;
   background: #1C7CCC;
+  align-items: center;
 }
 
 .second-container {
-   /* width: 640px; */
+  
   height: 540px; 
   /* margin: auto; */
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly; 
+  margin: 0 auto;
+
 }
+
+.edit {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  
+}
+
+.book {
+  width: 400px;
+  height: 550px;
+  background-color: red;
+  border-top: 3px solid #333;
+  border-right: 3px solid #333;
+  box-shadow: inset 280px 0 50px #0005, 0 20px 100px blue;
+  transform-style: preserve-3d;
+  transform: perspective(1500px);
+}
+
+/* .book:hover {
+  width: 450px;
+  height: 550px;
+} */
+
+
+
+.book img.front-cover {
+  max-width: 400px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  transform-origin: left;
+  transition: transform 1s linear;
+}
+
+.book img.user-cover {
+  max-width: 400px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transform-origin: left;
+  transition: transform 1s linear;
+}
+
+.book:hover img.user-cover {
+  transform: rotateY(-160deg);
+  /* max-width: 500px; */
+  
+  }
+
+.book:hover img.front-cover {
+transform: rotateY(-160deg);
+/* max-width: 500px; */
+
+}
+
+.book div.new-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  padding: 20px;
+}
+
+.show {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+/* .review-container { */
+
+/* } */
+
+.all-reviews {
+  background-color: #fed9ff;
+        width: 600px;
+        height: 250px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        text-align: center;
+        padding: 20px;
+        align-items: center;
+        margin: 0 auto;
+}
+
+

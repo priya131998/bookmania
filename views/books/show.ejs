@@ -9,6 +9,10 @@
 </head>
 <body>
     <h2>Book Details</h2>
+    <div class = "show">
+    <div class = "book">
+      <img class="user-cover"src = <%= book.link %> alt= "book cover"/>
+      <div class ="new-content">
     <section id="show-page">
         <div>Title: </div>
         <div><%= book.title %></div>
@@ -18,12 +22,15 @@
         <div><%= book.publish %></div>
         <div>Description: </div>
         <div><%= book.description %></div>
-        <div>Book Cover: </div>
-        <div><img src = <%= book.link %> /></div>
+        <!-- <div><img class="user-cover"src = <%= book.link %> alt= "book cover"/></div> -->
       </section>
       <a href="/books/<%= book._id %>/edit">Update</a>
       <!-- <a href="/reviews/<%= book._id %>">Add Review</a> -->
-
+    </div>
+    </div>
+    </div>
+    
+    <div class = "review-container">
       <br><br><h2>Reviews</h2>
 <form id="add-review-form" method="POST"
   action="/books/<%= book._id %>/reviews">
@@ -39,7 +46,9 @@
   </select>
   <input type="submit" value="Add Review">
 </form>
+</div>
 
+<div class ="all-reviews">
 <% if (book.reviews.length) { %>
   <table>
     <thead>
@@ -68,5 +77,6 @@
 <% } else { %>
   <h5>No Reviews Yet</h5>
 <% } %>
+</div>
 </body>
 </html>

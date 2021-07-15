@@ -7,26 +7,31 @@
     <title>Document</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
-<body>
+<body class = "edit">
+  <div class = "book">
+    <img class="front-cover" src = "/images/cover.jpg" alt= "book cover">
+    <div class ="new-content">
     <h2>Enter a New Book</h2>
 <form action="/books" method="POST">
 	<label>Title:
 	  <input type="text" name="title">
-	</label><br>
+	</label><br><br>
     <label>Author:
         <input type="text" name="author">
       </label>
-      <br>
+      <br><br>
 	<label>Published:
 	  <input type="text" name="publish">
-	</label><br>
+	</label><br><br>
 	<label>Description:
         <textarea type="text" name="description"> </textarea>
-      </label><br>
+      </label><br><br>
 	<label>Link to the book cover:
 	  <input type="url" name="link">
-	</label><br>
+	</label><br><br>
 	<input type="submit" value="Add Book">
 </form>
+</div>
+</div>
 </body>
 </html>
