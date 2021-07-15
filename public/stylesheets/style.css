@@ -280,3 +280,17 @@ a.title-button:hover span:after {
   opacity: 1;
   right: 0;
 }
+
+/* #new-form {
+  margin: auto;
+  width: 10%;
+  padding: 10px;
+} */
+
+div.new-content {
+  border-radius: 5px;
+  padding: 20px;
+  margin: auto;
+  width: 60%;
+  
+}

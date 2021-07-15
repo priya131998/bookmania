@@ -46,15 +46,6 @@ async function deleteBook(req, res) {
   res.redirect('/books');
 }
 
-// function deleteBook(req, res) {
-//   Book.findByIdAndDelete(req.params.id, function (err, applicant) {
-//       if (err) {
-//           console.log(err);
-//           res.redirect(`/books/${req.params.id}`);
-//       }
-//       res.redirect(`/books/${req.params.id}`);
-//   });
-// }
 
 async function edit(req, res) {
   const book = await Book.findById(req.params.id)
