@@ -1,19 +1,26 @@
 <%- include('../partials/header') %>
 
-    <h2>Book Details</h2>
     <div class = "show">
     <div class = "book">
       <img class="user-cover"src = <%= book.link %> alt= "book cover"/>
       <div class ="new-content">
     <section id="show-page">
-        <div>Title: </div>
+        <div><h3>Title: </h3></div>
+        <br>
         <div><%= book.title %></div>
+        <br>
         <div>Author: </div>
+        <br>
         <div><%= book.author.join(', ') %></div>
+        <br>
         <div>Published: </div>
+        <br>
         <div><%= book.publish %></div>
+        <br>
         <div>Description: </div>
+        <br>
         <div><%= book.description %></div>
+        <br>
       </section>
       <a href="/books/<%= book._id %>/edit">Update</a>
     </div>
@@ -21,7 +28,8 @@
     </div>
     
     <div class = "review-container">
-      <br><br><h2>Reviews</h2>
+      <h2>Reviews</h2>
+      <br>
 <form id="add-review-form" method="POST"
   action="/books/<%= book._id %>/reviews">
   <label>Review:</label>
@@ -37,12 +45,13 @@
   <input type="submit" value="Add Review">
 </form>
 </div>
-
+<br> <br>
 <div class ="all-reviews">
 <% if (book.reviews.length) { %>
   <table>
     <thead>
-      <tr>
+      <tr class="space">
+        <th></th>
       	 <th>Date</th>
         <th>Review</th>
         <th>Rating</th>
