@@ -11,7 +11,7 @@
 &nbsp;
 &nbsp;
 
-![After the game started](https://github.com/priya131998/memory-card-game/blob/main/Screenshots/Screenshot1.png)
+![](https://github.com/priya131998/bookmania/blob/main/public/images/Screenshots%203.png)
 &nbsp;
 &nbsp;
 
@@ -26,5 +26,5 @@
 ## Next Steps:
 
 1. Fixing the CSS
-* I need to make the app look much better.
-* Make it more responsive
+2. I need to make the app look much better.
+3. Make it more responsive
