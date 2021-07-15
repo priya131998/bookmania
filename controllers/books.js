@@ -17,7 +17,7 @@ function index(req, res) {
 }
 
 function newBook(req, res) {
-    res.render('books/new');
+    res.render('books/new', { title: 'New book' });
   }
 
 
@@ -29,7 +29,7 @@ function create(req, res) {
   }
   const book = new Book(req.body);
   book.save(function(err) {
-    if (err) return res.render('books/new');
+    if (err) return res.render('books/new', { title: 'New book',books });
     console.log(book);
     res.redirect('/books');
   });
