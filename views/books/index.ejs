@@ -1,45 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel='stylesheet' href='/stylesheets/style.css' />
-  <title>Books</title>
-</head>
-<body>
-  <h1>Book List</h1>
+<%- include('../partials/header') %>
   <div class = "main-container">
-  <!-- <table>
-      <thead>
-          <tr>
-              <th>Book cover</th>
-          </tr>
-      </thead>
-      <tbody>
-          <% books.forEach(function(b) { %>
-            
-              <div class = "container"></div>
-                <form
-                    action="/books/<%= b._id %>?_method=DELETE"
-                    id="delete-form"
-                    method="POST"
-                >
-                <tr>
-                  
-                    <td><button type="submit">X</button></td>
-                    <td><img src = <%= b.link %> /></td>
-                    <td><a href="/books/<%= b._id %>">DETAILS</a></td>
-                    
-                </tr>
-                    
-                    
-                </form>
-            </div>
-        
-          <% }); %>
-      </tbody>
-  </table> -->
  <section class = "second-container">
     <% books.forEach(function(b) { %>
         <form

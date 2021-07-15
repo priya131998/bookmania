@@ -12,7 +12,7 @@ module.exports = {
 
 function index(req, res) {
   Book.find({}, function(err, books) {
-    res.render('books/index', { books });
+    res.render('books/index', { title: 'Book Index',books });
   });
 }
 
