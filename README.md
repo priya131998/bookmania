@@ -15,11 +15,16 @@
 &nbsp;
 &nbsp;
 
+## App Link:
+[Boomania](https://bookmania-deploy.herokuapp.com)
+
 ## Technology Used:
 
 * HTML
 * CSS
-* JavaScript
+* Node.js
+* MongoDB
+* Express
 
 
 
