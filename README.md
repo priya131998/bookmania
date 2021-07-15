@@ -1,7 +1,7 @@
 # bookmania
 
 
-## Screenshots of the game:
+## Screenshots of the app:
 
 ![](https://github.com/priya131998/bookmania/blob/main/public/images/Screenshot%201.png)
 &nbsp;
