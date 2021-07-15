@@ -3,11 +3,11 @@
 
 ## Screenshots of the game:
 
-![Before the game started](https://github.com/priya131998/bookmania/blob/main/public/images/Screenshot%201.png)
+![](https://github.com/priya131998/bookmania/blob/main/public/images/Screenshot%201.png)
 &nbsp;
 &nbsp;
 
-![After the game started](https://github.com/priya131998/memory-card-game/blob/main/Screenshots/Screenshot3.png)
+![](https://github.com/priya131998/bookmania/blob/main/public/images/Screenshots%202.png)
 &nbsp;
 &nbsp;
 
