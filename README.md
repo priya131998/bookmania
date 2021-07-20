@@ -7,13 +7,7 @@
 &nbsp;
 &nbsp;
 
-![](https://github.com/priya131998/bookmania/blob/main/public/images/Screenshots%202.png)
-&nbsp;
-&nbsp;
 
-![](https://github.com/priya131998/bookmania/blob/main/public/images/Screenshots%203.png)
-&nbsp;
-&nbsp;
 
 ## App Link:
 [Boomania](https://bookmania-deploy.herokuapp.com)
